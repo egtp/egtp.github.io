@@ -1,0 +1,17 @@
+title: Every Game Talk Possible
+description: A Sydney Games Festival event for digital, academic and tabletop game talks.
+url: ""
+baseurl: ""
+lang: en-AU
+permalink: pretty
+links:
+  call_for_speakers: "https://forms.gle/5GWrc53yLogoR5cc8"
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

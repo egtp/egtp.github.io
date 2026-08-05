@@ -1,0 +1,82 @@
+:root {
+  --ink: #151515;
+  --paper: #f8f7f2;
+  --accent: #e9df31;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; line-height: 1.45; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.16em; }
+a:hover, a:focus { text-decoration-thickness: 2px; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 0.98; letter-spacing: -0.055em; }
+h1 { font-size: clamp(4rem, 13vw, 11rem); margin-bottom: 1.5rem; max-width: 11ch; }
+h2 { font-size: clamp(2.3rem, 5.5vw, 5rem); margin-bottom: 1.25rem; }
+h3 { font-size: 1.35rem; margin-bottom: 0.5rem; }
+p { font-size: 1.08rem; }
+
+.wrap { width: min(100% - 2.5rem, 72rem); margin-inline: auto; }
+.skip-link { position: fixed; top: -5rem; left: 1rem; background: var(--accent); color: var(--ink); padding: 0.6rem 0.9rem; z-index: 2; }
+.skip-link:focus { top: 1rem; }
+.site-header { border-bottom: 1px solid var(--ink); }
+.header-inner { min-height: 4.5rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.site-name { display: inline-flex; align-items: center; gap: 0.55rem; text-decoration: none; font-size: 1.1rem; font-weight: 700; letter-spacing: -0.04em; }
+.egg-mark { width: 1.2rem; height: 1.55rem; display: inline-block; border: 2px solid var(--ink); border-radius: 55% 55% 48% 48% / 62% 62% 42% 42%; background: var(--accent); }
+.site-header nav { display: flex; gap: clamp(0.75rem, 3vw, 1.8rem); font-size: 0.95rem; }
+
+.hero { min-height: min(45rem, calc(100vh - 4.5rem)); display: grid; align-content: center; border-bottom: 1px solid var(--ink); padding-block: 4rem; }
+.eyebrow { margin-bottom: 1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.hero-summary { max-width: 35rem; font-size: clamp(1.25rem, 2.5vw, 1.8rem); line-height: 1.2; }
+.highlight { background: var(--accent); padding-inline: 0.08em; }
+.section { padding-block: clamp(4rem, 10vw, 8rem); border-bottom: 1px solid var(--ink); }
+.section-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(15rem, 2fr); gap: 2rem 4rem; }
+.section-grid > p, .section-grid > div { max-width: 42rem; }
+.section-grid p { font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.35; }
+.button { display: inline-block; padding: 0.75rem 1rem; background: var(--ink); color: var(--paper); font-weight: 700; text-decoration: none; }
+.button:hover, .button:focus { background: var(--accent); color: var(--ink); }
+
+.schedule-wrap { overflow-x: auto; }
+.schedule { width: 100%; min-width: 32rem; border-collapse: collapse; font-size: clamp(1rem, 2vw, 1.35rem); }
+.schedule th, .schedule td { padding: 1rem 0.5rem; border-top: 1px solid var(--ink); text-align: left; vertical-align: top; }
+.schedule th:first-child, .schedule td:first-child { width: 22%; padding-left: 0; white-space: nowrap; text-align: left; }
+.schedule th:nth-child(2), .schedule td:nth-child(2) { text-align: center; }
+.schedule th:last-child, .schedule td:last-child { padding-right: 0; }
+.schedule a { font-weight: 700; }
+.break-row td { background: var(--accent); }
+.schedule .stream-cell { padding: 0; }
+.stream-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--ink); background: #efede5; }
+.stream-options a { display: grid; min-height: 5rem; place-content: center; padding: 0.5rem; text-decoration: none; }
+.stream-options a + a { border-left: 1px solid var(--ink); }
+.stream-options a:hover, .stream-options a:focus { background: var(--accent); }
+.stream-list { margin: 0; padding: 0; list-style: none; }
+.stream-list li { border-top: 1px solid var(--ink); padding: 1rem 0; }
+.stream-list li:last-child { border-bottom: 1px solid var(--ink); }
+
+.page-hero { padding-block: clamp(4rem, 9vw, 7rem) 3rem; border-bottom: 1px solid var(--ink); }
+.page-hero h1 { font-size: clamp(3.5rem, 10vw, 8rem); margin-bottom: 0; }
+.page-copy { padding-block: 4rem 7rem; max-width: 47rem; }
+.page-copy p { font-size: 1.2rem; }
+.page-copy h2 { margin-top: 3rem; font-size: clamp(2rem, 4vw, 3.4rem); }
+.page-copy ul { padding-left: 1.2rem; font-size: 1.15rem; }
+.programme-note { padding: 1rem; border-left: 5px solid var(--accent); background: #efede5; }
+
+.site-footer { padding-top: 2.5rem; background: var(--ink); color: var(--paper); }
+.footer-main { display: flex; justify-content: space-between; gap: 2rem; padding-bottom: 3rem; }
+.footer-title { margin: 0; font-size: clamp(2rem, 5vw, 4rem); font-weight: 700; line-height: 0.9; letter-spacing: -0.06em; }
+.footer-main p { max-width: 23rem; font-size: 1rem; }
+.footer-main .acknowledgement { margin-top: 1.25rem; }
+.footer-bottom { display: flex; justify-content: space-between; gap: 1rem; padding-block: 1rem; border-top: 1px solid #777; font-size: 0.85rem; }
+.footer-bottom nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 1rem; }
+
+@media (max-width: 38rem) {
+  .wrap { width: min(100% - 1.5rem, 72rem); }
+  .section-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .schedule { font-size: 0.93rem; }
+  .schedule th, .schedule td { padding: 0.8rem 0.3rem; }
+  .footer-main, .footer-bottom { flex-direction: column; }
+  .footer-bottom nav { justify-content: flex-start; }
+}
