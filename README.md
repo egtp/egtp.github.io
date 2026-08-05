@@ -9,7 +9,6 @@ bundle install
 bundle exec jekyll serve
 ```
 
-The site is ready for GitHub Pages. Set `url` and `baseurl` in `_config.yml` when its final address is known.
 
 ## Updating the programme
 
