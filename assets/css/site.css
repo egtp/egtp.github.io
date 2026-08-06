@@ -39,6 +39,9 @@ p { font-size: 1.08rem; }
 .section-grid p { font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.35; }
 .button { display: inline-block; padding: 0.75rem 1rem; background: var(--ink); color: var(--paper); font-weight: 700; text-decoration: none; }
 .button:hover, .button:focus { background: var(--accent); color: var(--ink); }
+.partner-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr)); gap: 0.75rem; margin: 2rem 0 0; padding: 0; list-style: none; }
+.partner-list li { display: grid; min-height: 6rem; place-items: center; padding: 0.75rem; background: #fff; }
+.partner-list img { display: block; width: 100%; max-height: 4.5rem; object-fit: contain; }
 
 .schedule-wrap { overflow-x: auto; }
 .schedule { width: 100%; min-width: 32rem; border-collapse: collapse; font-size: clamp(1rem, 2vw, 1.35rem); }
