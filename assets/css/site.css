@@ -30,6 +30,7 @@ p { font-size: 1.08rem; }
 
 .hero { min-height: min(45rem, calc(100vh - 4.5rem)); display: grid; align-content: center; border-bottom: 1px solid var(--ink); padding-block: 4rem; }
 .eyebrow { margin-bottom: 1rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.event-details { margin-bottom: 1rem; font-size: clamp(1.15rem, 2.5vw, 1.6rem); font-weight: 700; }
 .hero-summary { max-width: 35rem; font-size: clamp(1.25rem, 2.5vw, 1.8rem); line-height: 1.2; }
 .highlight { background: var(--accent); padding-inline: 0.08em; }
 .section { padding-block: clamp(4rem, 10vw, 8rem); border-bottom: 1px solid var(--ink); }
@@ -55,6 +56,9 @@ p { font-size: 1.08rem; }
 .stream-list { margin: 0; padding: 0; list-style: none; }
 .stream-list li { border-top: 1px solid var(--ink); padding: 1rem 0; }
 .stream-list li:last-child { border-bottom: 1px solid var(--ink); }
+
+address { margin-bottom: 1.5rem; font-size: 1.1rem; font-style: normal; font-weight: 700; }
+.map { width: 100%; aspect-ratio: 16 / 9; display: block; border: 1px solid var(--ink); }
 
 .page-hero { padding-block: clamp(4rem, 9vw, 7rem) 3rem; border-bottom: 1px solid var(--ink); }
 .page-hero h1 { font-size: clamp(3.5rem, 10vw, 8rem); margin-bottom: 0; }

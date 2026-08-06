@@ -1,11 +1,15 @@
 title: Every Game Talk Possible
-description: A Sydney Games Festival event for digital, academic and tabletop game talks.
+description: Every Game Talk Possible at UNSW CBD Campus on Friday 16 October 2026.
 url: "https://everygametalkpossible.org"
 baseurl: ""
 lang: en-AU
 permalink: pretty
 links:
   call_for_speakers: "https://forms.gle/5GWrc53yLogoR5cc8"
+event:
+  date: Friday 16 October 2026
+  date_iso: "2026-10-16"
+  venue: UNSW CBD Campus
 markdown: kramdown
 plugins:
   - jekyll-seo-tag

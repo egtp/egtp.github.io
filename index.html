@@ -7,6 +7,7 @@ title: Every Game Talk Possible
   <div class="wrap">
     <p class="eyebrow">Sydney Games Festival presents</p>
     <h1 id="event-title">Every Game Talk Possible</h1>
+    <p class="event-details"><time datetime="{{ site.event.date_iso }}">{{ site.event.date }}</time> · <a href="#location">{{ site.event.venue }}</a></p>
     <p class="hero-summary">A day of ideas, experiments and conversations about games. <span class="highlight">Doors open 12pm. Talks 1–7pm.</span></p>
   </div>
 </section>
@@ -29,6 +30,8 @@ title: Every Game Talk Possible
 </section>
 
 {% include schedule.html %}
+
+{% include location.html %}
 
 <section class="section" id="partners" aria-labelledby="partners-title">
   <div class="wrap section-grid">
