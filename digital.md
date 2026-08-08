@@ -7,7 +7,7 @@ permalink: /digital/
 
 Talks for people making, releasing and playing digital games.
 
-> **Programme to be announced.** Speaker proposals are currently open.
+> **Programme to be announced.** Speaker proposals close **{{ site.event.speaker_deadline }}**.
 {: .programme-note}
 
 [Submit a talk proposal]({{ site.links.call_for_speakers }}){: .button target="_blank" rel="noopener"}

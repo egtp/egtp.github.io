@@ -7,7 +7,7 @@ permalink: /tabletop/
 
 Talks for designers, players and communities around board games, roleplaying games and other games across the table.
 
-> **Programme to be announced.** Speaker proposals are currently open.
+> **Programme to be announced.** Speaker proposals close **{{ site.event.speaker_deadline }}**.
 {: .programme-note}
 
 [Submit a talk proposal]({{ site.links.call_for_speakers }}){: .button target="_blank" rel="noopener"}
