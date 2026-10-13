@@ -10,7 +10,7 @@ speakers:
   - name: "Andrew Chia"
     personal_url: ""
     job_title: "Co-Founder and CEO"
-    org: "On Up Plus"
+    org: "One Up Plus"
     org_url: "https://oneupplus.net/"
     photo: "andrew-chia.jpeg"
     bio: >-
