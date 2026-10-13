@@ -1,5 +1,5 @@
 ---
-title: "Nautilus Epoch - A Blueprint for Eco-Aesthetics in Games"
+title: "15 years of bad advice, but this time is different!"
 summary: >-
   For students thinking about following an alternative path, Andrew will share some insights about what is possible. Everything he's tried in each year, what worked, what didn’t and what might be next if Andrew were going to start again from the beginning.
 stream: "Academic"
@@ -8,10 +8,10 @@ time: "15:00"
 duration: "30 min"
 speakers:
   - name: "Andrew Chia"
-    personal_url: ""
+    personal_url: "https://oneupplus.net/"
     job_title: "Co-Founder and CEO"
     org: "UNSW"
-    org_url: "https://oneupplus.net/"
+    org_url: ""
     photo: "andrew-chia.jpeg"
     bio: >-
       Andrew has a background in database systems and cloud web solutions and graduated from UNSW. He has developed entertainment software and games across all platforms mobile, pc and consoles.
