@@ -8,10 +8,10 @@ time: "15:00"
 duration: "30 min"
 speakers:
   - name: "Andrew Chia"
-    personal_url: "https://oneupplus.net/"
+    personal_url: ""
     job_title: "Co-Founder and CEO"
-    org: "UNSW"
-    org_url: ""
+    org: "On Up Plus"
+    org_url: "https://oneupplus.net/"
     photo: "andrew-chia.jpeg"
     bio: >-
       Andrew has a background in database systems and cloud web solutions and graduated from UNSW. He has developed entertainment software and games across all platforms mobile, pc and consoles.
