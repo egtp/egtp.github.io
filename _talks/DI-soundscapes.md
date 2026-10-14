@@ -1,7 +1,7 @@
 ---
 title: "Sound Mangling and Space: Immersive Game Soundscapes"
 summary: >-
-  Explore the stages of sound design needed to create interesting and coherent soundscapes. Starting with sound style and character, the session moves through synthesis and effects to real-time engine mixing and variable-driven trigger classes. Attendees will leave with tools for developing new audio styles and implementing them in interactive media.
+  In this audio analysis, designer Nyx Cydot inspires innovation in game soundscapes, by breaking down the in-dev movement shooter Sacrisigil. They explore the role of sound in gameplay and show how they utilise tones, synthesis, effects, engine mixing and data-driven triggers to achieve game design goals. Through analysis, examples and retrospective, viewers will leave this talk with the tools required for innovation and implementation of game audio.
 stream: "Digital"
 status: "confirmed"
 time: "18:30"
