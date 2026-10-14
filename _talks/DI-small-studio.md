@@ -4,7 +4,7 @@ summary: >-
   After working as a Technical Designer at Ubisoft on XDefiant, Simone moved into running Frog Spawn Studio, a two-person indie studio where her responsibilities suddenly extended far beyond design. Since then, the studio has released two mobile games, continued development on Puddle Pals and explored several other projects. This talk reflects on that transition: which lessons from AAA development remained valuable, what changed without specialised departments, and what it actually takes to finish games as a very small team.
 stream: "Digital"
 status: "cancelled"
-time: "13:05"
+time: 
 duration: "15 min"
 speakers:
   - name: "Simone Scouller"
