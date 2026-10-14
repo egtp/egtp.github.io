@@ -5,7 +5,7 @@ summary: >-
 stream: "Digital"
 status: "confirmed"
 time: "13:00"
-duration: "5 min"
+duration: "10 min"
 speakers:
   - name: "Dr. Ryan Stanton"
     personal_url: ""
