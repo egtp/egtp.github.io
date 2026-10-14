@@ -8,7 +8,7 @@ time: "13:15"
 duration: "15 min"
 speakers:
   - name: "Mikael Barbaro de Brito"
-    personal_url: "https://linktr.ee/sagemagegames"
+    personal_url: "https://sagemage.dev"
     social_links:
       - label: "LinkedIn"
         url: "https://www.linkedin.com/in/mikaelbarbaro/"
