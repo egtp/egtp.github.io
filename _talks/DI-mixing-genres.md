@@ -8,13 +8,15 @@ time: "13:15"
 duration: "15 min"
 speakers:
   - name: "Mikael Barbaro de Brito"
-    personal_url: "https://sagemage.dev"
+    personal_url:
     social_links:
       - label: "LinkedIn"
         url: "https://www.linkedin.com/in/mikaelbarbaro/"
+      - label: "Sorcery Mastery"
+        url: "https://sagemage.dev/sorcery-mastery/"
     job_title: "Unity Game Developer"
     org: "Sage Mage"
-    org_url: "https://sagemage.dev/sorcery-mastery/"
+    org_url: "https://sagemage.dev"
     photo: "mikael-barbaro.jpg"
     bio: >-
       Mikael Barbaro de Brito is a Sydney-based Unity game developer and the solo developer of Sorcery Mastery, a PvP arena game for Steam. He holds a Bachelor of Interactive Media (Games) and has worked in game development and quality assurance both commercially and independently.
