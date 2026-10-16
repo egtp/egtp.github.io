@@ -156,6 +156,32 @@ address { margin-bottom: 1.5rem; font-size: 1.1rem; font-style: normal; font-wei
 .full-schedule-close-row > * { background: var(--ink) !important; color: var(--paper); }
 .full-schedule-close-row td { font-size: 1rem; vertical-align: middle; }
 .full-schedule tbody tr:last-child > * { border-bottom: 0; }
+.mobile-agenda { display: none; }
+@media (max-width: 60rem) {
+  .full-schedule-page .page-hero { padding-block: 2rem 1.5rem; }
+  .full-schedule-page .page-hero h1 { font-size: 2.75rem; }
+  .full-schedule-page .page-copy { padding-block: 1.5rem 3rem; }
+  .full-schedule-page .page-copy p { font-size: 1rem; }
+  .full-schedule-page .full-schedule-wrap { display: none; }
+  .mobile-agenda { display: block; }
+  .mobile-agenda [hidden] { display: none; }
+  .mobile-agenda-filter { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+  .mobile-agenda-filter label { font-weight: 700; }
+  .mobile-agenda-filter select { min-height: 2.75rem; padding: 0.5rem; border: 1px solid var(--ink); background: #fff; color: var(--ink); font: inherit; }
+  .mobile-agenda-jumps { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin-bottom: 1rem; }
+  .mobile-agenda-jumps a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+  .mobile-agenda-shared { padding: 1rem; border: 1px solid var(--ink); background: #efede5; }
+  .mobile-agenda-break { margin-top: 2rem; background: var(--accent); }
+  .mobile-agenda h2 { margin-top: 2rem; font-size: 1.75rem; }
+  .mobile-agenda-group { margin-block: 1.5rem; }
+  .mobile-agenda-group h3 { font-size: 1.15rem; letter-spacing: 0; }
+  .mobile-agenda-card { margin-top: 0.75rem; padding: 1rem; border: 1px solid var(--ink); border-left: 0.35rem solid var(--accent-green); background: #fff; }
+  .mobile-agenda-digital { border-left-color: var(--accent); }
+  .mobile-agenda-academic { border-left-color: #a8c9c8; }
+  .mobile-agenda-meta { margin-bottom: 0.5rem; font-size: 0.85rem; }
+  .mobile-agenda-card > a { display: block; min-height: 2.75rem; font-size: 1.1rem; font-weight: 700; overflow-wrap: anywhere; }
+  .mobile-agenda-speakers { margin-top: 0.5rem; }
+}
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 
 .talk-hero { padding-block: clamp(3rem, 6vw, 5rem) clamp(2.5rem, 5vw, 4rem); }

@@ -1,0 +1,77 @@
+{% assign agenda_talks = tabletop_talks | concat: digital_talks | concat: academic_talks | sort: "time" %}
+{% assign agenda_groups = agenda_talks | group_by: "time" %}
+{% assign periods = "Afternoon,Evening" | split: "," %}
+
+<div class="mobile-agenda">
+  <div class="mobile-agenda-filter" hidden>
+    <label for="agenda-stream">Show stream</label>
+    <select id="agenda-stream">
+      <option value="all">All streams</option>
+      <option>Tabletop</option>
+      <option>Digital</option>
+      <option>Academic</option>
+    </select>
+  </div>
+  <nav class="mobile-agenda-jumps" aria-label="Jump to programme session">
+    <a href="#agenda-afternoon">Afternoon · 1pm</a>
+    <a href="#agenda-evening">Evening · 5pm</a>
+  </nav>
+  <p class="mobile-agenda-shared"><strong>12–1pm</strong><br>Doors open and networking</p>
+  {% for period in periods %}
+    {% if period == "Afternoon" %}
+      {% assign period_start = "13:00" %}
+      {% assign period_end = "16:00" %}
+    {% else %}
+      <p class="mobile-agenda-shared mobile-agenda-break"><strong>4–5pm</strong><br>Break and networking across all streams</p>
+      {% assign period_start = "17:00" %}
+      {% assign period_end = "19:15" %}
+    {% endif %}
+    <h2 id="agenda-{{ period | downcase }}">{{ period }}</h2>
+    {% for group in agenda_groups %}
+      {% if group.name >= period_start and group.name < period_end %}
+        <section class="mobile-agenda-group" aria-labelledby="agenda-time-{{ group.name | remove: ':' }}">
+          <h3 id="agenda-time-{{ group.name | remove: ':' }}">{% include format-time.html time=group.name %}</h3>
+          {% for talk in group.items %}
+            {% assign room = "A" %}
+            {% if talk.stream == "Digital" %}{% assign room = "B" %}{% endif %}
+            {% if talk.stream == "Academic" %}{% assign room = "C" %}{% endif %}
+            {% assign start_parts = talk.time | split: ":" %}
+            {% assign start_minutes = start_parts[0] | times: 60 | plus: start_parts[1] %}
+            {% assign duration_minutes = talk.duration | remove: " min" | plus: 0 %}
+            {% assign end_minutes = start_minutes | plus: duration_minutes %}
+            {% assign end_hour = end_minutes | divided_by: 60 | prepend: "0" | slice: -2, 2 %}
+            {% assign end_minute = end_minutes | modulo: 60 | prepend: "0" | slice: -2, 2 %}
+            {% assign end_time = end_hour | append: ":" | append: end_minute %}
+            <article class="mobile-agenda-card mobile-agenda-{{ talk.stream | downcase }}" data-stream="{{ talk.stream }}">
+              <div class="mobile-agenda-meta">{{ talk.stream }} · Room {{ room }}<br>{% include format-time.html time=talk.time %}–{% include format-time.html time=end_time %} · {{ talk.duration }}</div>
+              {% if talk.status == "unconfirmed" and page.show_unconfirmed_details != true %}
+                <strong>To Be Confirmed</strong>
+              {% else %}
+                <a href="{{ talk.url | relative_url }}">{{ talk.title }}</a>
+                <div class="mobile-agenda-speakers">{% for speaker in talk.speakers %}{{ speaker.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
+                {% if talk.status == "unconfirmed" %}<span class="full-schedule-status">Unconfirmed</span>{% endif %}
+              {% endif %}
+            </article>
+          {% endfor %}
+        </section>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  <p class="mobile-agenda-shared"><strong>7:15–8:30pm</strong><br>Networking · venue closes at 8:30pm</p>
+</div>
+<script>
+  (() => {
+    const agenda = document.querySelector('.mobile-agenda');
+    const filter = agenda.querySelector('select');
+    agenda.querySelector('.mobile-agenda-filter').hidden = false;
+    filter.addEventListener('change', () => {
+      agenda.querySelectorAll('.mobile-agenda-group').forEach(group => {
+        const cards = Array.from(group.querySelectorAll('[data-stream]'));
+        cards.forEach(card => {
+          card.hidden = filter.value !== 'all' && card.dataset.stream !== filter.value;
+        });
+        group.hidden = cards.every(card => card.hidden);
+      });
+    });
+  })();
+</script>

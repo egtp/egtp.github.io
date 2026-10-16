@@ -1,7 +1,7 @@
 ---
 layout: content
 title: Tabletop
-eyebrow: 1–7:30pm · Room A
+eyebrow: 1–7:15pm · Room A
 permalink: /tabletop/
 ---
 

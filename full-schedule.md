@@ -5,6 +5,7 @@ eyebrow: EGTP 2026 programme
 permalink: /full-schedule/
 wide: true
 full_width: true
+body_class: full-schedule-page
 show_unconfirmed_details: false
 ---
 
@@ -16,7 +17,7 @@ Check the individual [Tabletop]({{ '/tabletop/' | relative_url }}), [Digital]({{
 {% assign digital_talks = site.talks | where: "stream", "Digital" | sort: "time" %}
 {% assign academic_talks = site.talks | where: "stream", "Academic" | sort: "time" %}
 {% assign before_break = "13:00,13:15,13:30,13:45,14:00,14:15,14:30,14:45,15:00,15:15,15:30,15:45" | split: "," %}
-{% assign after_break = "17:00,17:15,17:30,17:45,18:00,18:15,18:30,18:45,19:00,19:15" | split: "," %}
+{% assign after_break = "17:00,17:15,17:30,17:45,18:00,18:15,18:30,18:45,19:00" | split: "," %}
 
 <div class="schedule-wrap full-schedule-wrap">
   <table class="full-schedule">
@@ -114,7 +115,7 @@ Check the individual [Tabletop]({{ '/tabletop/' | relative_url }}), [Digital]({{
         </tr>
       {% endfor %}
       <tr class="full-schedule-shared-row">
-        <th scope="row">7:30pm</th>
+        <th scope="row">7:15pm</th>
         <td colspan="3"><strong>Networking · venue closes at 8:30pm</strong></td>
       </tr>
       <tr class="full-schedule-time-row full-schedule-close-row">
@@ -125,4 +126,6 @@ Check the individual [Tabletop]({{ '/tabletop/' | relative_url }}), [Digital]({{
   </table>
 </div>
 
-Programme details may change. 
+{% include mobile-agenda.html %}
+
+Programme details may change.
